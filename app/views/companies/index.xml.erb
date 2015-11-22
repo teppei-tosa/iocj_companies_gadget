@@ -1,2 +1,11 @@
-<?xml version="1.9" encoding="utf-8" ?>
-<h1><%= @hoge %></h1>
+<?xml version="1.0" encoding="UTF-8"?>
+<Module>
+  <ModulePrefs
+      title="<%= @companies[:title] %>"
+      description="<%= @companies[:description] %>">
+    <Require feature="opensocial-0.8" />
+  </ModulePrefs>
+  <Content><![CDATA[
+      <%= @companies[:msg] %>
+  ]]></Content>
+</Module>
