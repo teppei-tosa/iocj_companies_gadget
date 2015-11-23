@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module>
   <ModulePrefs
-      title="<%= @companies[:title] %>"
-      description="<%= @companies[:description] %>">
+      title="IOCJ 加盟団体一覧"
+      description="IOCJ 加盟団体一覧">
     <Require feature="opensocial-0.8" />
   </ModulePrefs>
   <Content><![CDATA[
-      <%= @companies[:msg] %>
+    <ul>
+      <% @companies.each do |company| %>
+        <li><%= company %>
+      <% end %>
+    </ul>
   ]]></Content>
 </Module>
