@@ -6,10 +6,14 @@
     <Require feature="opensocial-0.8" />
   </ModulePrefs>
   <Content><![CDATA[
-    <ul>
+    <ul class="list-group">
       <% @companies.each do |company| %>
-        <li><%= company %>
+        <li class="list-group-item"><%= company %>
       <% end %>
     </ul>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   ]]></Content>
 </Module>
